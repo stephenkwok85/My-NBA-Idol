@@ -1,0 +1,121 @@
+<!--My code while learning HTML, no CSS used-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head of the HTML Code-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Stephen Kwok">
+    <meta name="description" content="Tribute Page to my favorite NBA player, Darius Garland.">
+    <title>My NBA Idol</title>
+    <link rel="icon" href="images/caveliers.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<!--Body of the HTML Code-->
+<body>
+    <header>
+        <h1>MY NBA IDOL</h1>
+    
+
+        <!--Image of Darius Garland as a Cleveland Cavelier-->
+        <div>   
+            <figure>
+                    <img src="images/darius1.jpeg" alt="darius garland pic" title="my idol" width="200">
+
+                    <figcaption>Darius Garland</figcaption>
+            </figure> 
+        </div>
+
+        <hr>
+
+            <p>This is a tribute page is dedicated to my favorite basketball player.</p>
+
+            <!--Navigation section for the site-->
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li><a href="#Bio">About Darius Garland</a></li>
+                    <li><a href="collegeStats.html">His College Stats</a></li>
+                    <li><a href="nbaStats.html">His NBA Stats</a></li>
+                    <li><a href="#Author">Contact Author</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <article id="Bio">
+            <h2>About Darius Garland</h2>
+                <ul>
+                    <li>
+                        Born on January 26, 2000 in <a href="https://gary.gov/">Gary, Indiana</a>
+                        <img src="images/gary2.jpeg" alt="Gary, Indiana landscape pic" width="400">
+                    </li>
+
+                    <li>
+                        His father is <a href="https://www.basketball-reference.com/players/g/garlawi01.html">Winston Garland</a> who played 7 NBA Seasons
+                        <img src="images/winston.jpeg" alt="Darius Garland's father" width="350">
+                    </li>
+
+                    <li>
+                        Attended <a href="https://www.vanderbilt.edu">Vanderbilt University</a>: a D1 basketball college, 3 SEC regular-season titles and 2 SEC Tournament championships
+                        <br>
+                        <img src="images/vanderbilt1.jpeg" alt="Darius Garland's college" width="350">
+                    </li>
+
+                    <li>
+                        Drafted 5th overall in the class of 2019 by the Cleveland Caveliers
+                        <img src="images/draft.jpeg" alt="Darius Garland's draft night" width="350">
+                    </li>
+                </ul>
+        </article>
+    </main>
+
+    <hr>
+
+    <article id="Author">
+        <h3>Contact Me</h3>
+        <section>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend><h4>Notify Me Here</h4></legend>
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="your name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="your email" required>
+                    </p>
+                    <p>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="USA">USA</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Europe">Any European Country</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="message">Your Message:</label>
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Type your message here"></textarea>
+                    </p>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </article>
+
+    <hr>
+    <hr>
+
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="aboutMe.html">Stephen Kwok</a> &gt;&gt;&gt;
+        </p>
+    </footer>
+</body>
+</html>
